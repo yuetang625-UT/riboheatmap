@@ -9,8 +9,10 @@
 
 riboheatmap <- function(gene_list,cl=FALSE){
   if (cl== FALSE){
-    load("human_RNA.RData")
-    load("human_RIBO.RData")
+    #load("human_RNA.RData")
+    #load("human_RIBO.RData")
+    data(human_RNA)
+    data(human_RIBO)
     RNA_g=human_RNA[gene,]
     RIBO_g=human_RIBO[gene,]
     rm(human_RNA)
@@ -24,8 +26,10 @@ riboheatmap <- function(gene_list,cl=FALSE){
                        show_rownames = TRUE, scale = "row",show_colnames = FALSE, cluster_row=FALSE, cluster_col=TRUE,
                        cellwidth=0.8, cellheight=10, fontsize = 6,color = colorRampPalette(c("blue", "white", "red"))(100))
   }else{
-    load("human_RNA_cl.RData")
-    load("human_RIBO_cl.RData")
+    #load("human_RNA_cl.RData")
+    #load("human_RIBO_cl.RData")
+    data(human_RNA_cl)
+    data(human_RIBO_cl)
     RNA_g=human_RNA_cl[gene,]
     RIBO_g=human_RIBO_cl[gene,]
     rm(human_RNA_cl)
