@@ -15,8 +15,8 @@ riboheatmap <- function(gene_list,cl=FALSE){
     data(human_RIBO)
     RNA_g=human_RNA[gene,]
     RIBO_g=human_RIBO[gene,]
-    rm(human_RNA)
-    rm(human_RIBO)
+    #rm(human_RNA)
+    #rm(human_RIBO)
     rownames(RNA_g) <- paste("RNA",rownames(RNA_g),sep="_")
     rownames(RIBO_g) <- paste("RIBO",rownames(RIBO_g),sep="_")
     plot=rbind(RNA_g,RIBO_g)
@@ -32,8 +32,8 @@ riboheatmap <- function(gene_list,cl=FALSE){
     data(human_RIBO_cl)
     RNA_g=human_RNA_cl[gene,]
     RIBO_g=human_RIBO_cl[gene,]
-    rm(human_RNA_cl)
-    rm(human_RIBO_cl)
+    #rm(human_RNA_cl)
+    #rm(human_RIBO_cl)
     rownames(RNA_g) <- paste("RNA",rownames(RNA_g),sep="_")
     rownames(RIBO_g) <- paste("RIBO",rownames(RIBO_g),sep="_")
     plot=rbind(RNA_g,RIBO_g)
