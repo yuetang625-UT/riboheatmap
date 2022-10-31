@@ -1,5 +1,5 @@
 # riboheatmap
-install the package through install_github("yuetang625-UT/riboheatmap") 
+install the package through devtools::install_github("yuetang625-UT/riboheatmap") 
 
 load your library with library(Riboheatmap) 
 
